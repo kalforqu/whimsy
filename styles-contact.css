@@ -1,0 +1,226 @@
+/*This is my 377 FoCo Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 377 FoCo Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("cherry-blossom-background-optimized.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.center {
+    width: 800px;
+	  padding: 6%;
+    margin: 100px auto;
+ 	background: rgba(255, 255, 255, 0.483); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+	border: 4px hidden white;
+}
+
+   
+#logo {
+    margin-bottom: 16px;
+	border: 0px dashed rgb(255, 255, 255);
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 2em;
+    margin: 0px auto 10px auto;
+    color: rgb(97, 84, 57);
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5em;
+    line-height: 1.4;
+    color: rgb(97, 84, 57);
+    padding: 0px 0px;
+    margin: 0px auto 25px auto;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+}
+
+nav {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2em;
+	width: 505px;
+	margin: 0 auto;
+	border: solid rgb(97, 84, 57, 0.5);
+	border-width: 3px 0;
+	text-align: center;
+	margin-top: 2em;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+    
+nav li {
+	display: inline
+}
+ nav a {
+	 display: inline-block;
+	 padding: 10px;
+	 color: rgb(97, 84, 57);
+   background: rgba(255, 255, 255, 0.5); 
+	 text-decoration: none;
+	 font-weight: bold;
+   margin: 10px auto;
+
+ }
+
+a:hover{
+    color: rgb(97, 84, 57);
+	background: rgb(126, 157, 73);
+	/* This is the pink hover effect -- you’ll want to change this! */
+}
+
+ /* Code for cards */
+
+.cardphoto img {
+  display: block;
+  max-width: 100%; /* makes image responsive if needed but makes sure it doesn't stretch */
+}
+
+/* make the Section class cards here.  */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* make the card flex. The default is row so change flex direction to vertical. */
+.card {
+  background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 350px;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 252, 252);
+  box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0;
+  padding: 5rem;
+}
+.card:hover {
+  transition: all 0.1s ease-in;
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cardphoto {
+  max-height: 250px;
+  overflow: hidden;
+  padding: 2.5rem;
+}
+
+.cardarticle {
+  padding: 2.5rem;
+  flex-grow: 1;
+}
+
+/* typography */
+.cardH1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  color: rgb(97, 84, 57);
+  text-align: center;
+}
+
+.card p {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(97, 84, 57);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card footer {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(97, 84, 57);
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(97, 84, 57);
+}
+
+.card p {
+  color: rgb(97, 84, 57);
+}
